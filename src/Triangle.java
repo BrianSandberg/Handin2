@@ -1,5 +1,5 @@
 public class Triangle extends SuperShape {
-    //Kan kun lave retvinklede trekanter
+    //This class can only make right-angld triangles
     int Ax;
     int Ay;
     int Bx;
@@ -44,6 +44,7 @@ public class Triangle extends SuperShape {
         return ( (AB * AC) / 2);
     }
 
+    //We never got this method to work as intended. The tests for this class works, if the math in this method is correct though
     @Override
     boolean randomPoint(int x2, int y2) {
         int BCP = (x2 * (By - Cy) + Bx * (Cy - y2) + Cx * (y2 - By)) / 2;

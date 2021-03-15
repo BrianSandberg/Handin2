@@ -1,5 +1,5 @@
 public class Square extends SuperShape{
-    //Kan kun lave firkanter med 4x90 graders vinkler
+    //This class can only make squares with 90 degree corners only
     int Ax;
     int Ay;
     int Bx;

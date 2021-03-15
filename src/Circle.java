@@ -1,5 +1,5 @@
 public class Circle extends SuperShape {
-    //Kan kun lave cirkler med samme bredde og højde
+    //This class can only make circles that have the same width as its height
     int x;
     int y;
     int diameter;

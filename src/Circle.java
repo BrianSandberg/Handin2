@@ -14,20 +14,20 @@ public class Circle extends SuperShape {
     }
 
     @Override
-    void getCircumference() {
-        System.out.println("Circumference of circle is = " + (diameter * Math.PI));
+    double getCircumference() {
+        return ((diameter * Math.PI));
     }
 
     @Override
     void getCenter() {
         centerX = (x + (diameter / 2));
         centerY = (y + (diameter / 2));
-        System.out.println("Center of circle is: x = " + centerX + " y = " + centerY);
+        System.out.println("The center of circle is: " + centerX + " , " + centerY);
     }
 
     @Override
-    void getAreal() {
-        System.out.println("Circle areal is: " + Math.PI * Math.pow(diameter / 2, 2));
+    double getAreal() {
+        return ( Math.PI * Math.pow(diameter / 2, 2));
     }
 
     @Override

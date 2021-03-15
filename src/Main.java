@@ -13,7 +13,7 @@ public class Main {
         Triangle triangle = new Triangle(200, 100, 50, 500);
         //triangle.getCircumference();
         triangle.getAreal();
-        //triangle.getCenter();
+        triangle.getCenter();
         //triangle.getDistance(circle1);
         System.out.println(triangle.randomPoint(199, 101));
 

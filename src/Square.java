@@ -18,24 +18,24 @@ public class Square extends SuperShape{
     }
 
     @Override
-    void getCircumference() {
+    double getCircumference() {
         side1 = Bx-Ax;
         side2 = By-Ay;
-        System.out.println("Circumference of square is: " + (((side1*2) + (side2*2))));
+       return ((side1*2) + (side2*2));
     }
 
     @Override
     void getCenter() {
         centerX = Ax + ((Bx-Ax)/2);
         centerY = Ay + ((By-Ay)/2);
-        System.out.println("Center of square is: " + centerX + ", " + centerY);
+        System.out.println("The center of square is: " + centerX + " , " + centerY);
     }
 
     @Override
-    void getAreal() {
+    double getAreal() {
         side1 = Bx-Ax;
         side2 = By-Ay;
-        System.out.println("Areal of square is: " + (side1*side2));
+        return((side1*side2));
     }
 
     @Override

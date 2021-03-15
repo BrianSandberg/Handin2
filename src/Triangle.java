@@ -20,11 +20,13 @@ public class Triangle extends SuperShape {
 
     }
 
+
+
     @Override
-    void getCircumference() {
+    double getCircumference() {
         int AC = Cx - Ax;
         int AB = Ay - By;
-        System.out.println("Circumference of triangle is: " + (Math.sqrt(Math.pow(AC, 2) + Math.pow(AB, 2)) + AB + AC));
+        return (Math.sqrt(Math.pow(AC, 2) + Math.pow(AB, 2)) + AB + AC);
 
     }
 
@@ -32,14 +34,14 @@ public class Triangle extends SuperShape {
     void getCenter() {
         centerX = Ax + ((Cx - Ax) / 2);
         centerY = Ay + ((Ay - By) / 2);
-        System.out.println("Center of triangle is: " + centerX + ", " + centerY);
+        System.out.println("The center of the triangle is: " + centerX + " , " + centerY);
     }
 
     @Override
-    void getAreal() {
+    double getAreal() {
         int AC = Cx - Ax;
         int AB = Ay - By;
-        System.out.println("Areal of triangle is: " + (AB * AC) / 2);
+        return ( (AB * AC) / 2);
     }
 
     @Override

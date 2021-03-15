@@ -8,7 +8,6 @@ public class Triangle extends SuperShape {
     int Cy;
 
 
-
     public Triangle(int Ax, int Ay, int By, int Cx) {
         this.Ax = Ax;
         this.Ay = Ay;
@@ -45,25 +44,22 @@ public class Triangle extends SuperShape {
 
     @Override
     boolean randomPoint(int x2, int y2) {
+        int BCP = (x2 * (By - Cy) + Bx * (Cy - y2) + Cx * (y2 - By)) / 2;
+        int ACP = (Ax * (y2 - Cy) + x2 * (Cy - Ay) + Cx * (Ay - y2)) / 2;
+        int ABP = (Ax * (By - y2) + Bx * (y2 - Ay) + x2 * (Ay - By)) / 2;
         int AC = Cx - Ax;
         int AB = Ay - By;
-        double ABP = Math.abs((AB * (x2 - Ax))/2);
-        double ACP = Math.abs(((Cx - Ax) * (Ay - y2))/2);
 
-        double CBP = Math.abs(((AB * AC) / 2) - ABP - ACP);
-        System.out.println(CBP);
-        System.out.println(ABP);
-        System.out.println(ACP);
-
-        if((CBP + ABP + ACP) == ((AB * AC) / 2)){
+        if ((BCP + ACP + ABP) == ((AB * AC) / 2)) {
             return true;
-        } else{
+        } else {
             return false;
         }
     }
-
-
 }
+
+
+
 
 
 

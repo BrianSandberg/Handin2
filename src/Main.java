@@ -7,14 +7,15 @@ public class Main {
         //circle.getCircumference();
         //circle.getCenter();
         //circle.getAreal();
-        //circle.randomPoint(100, 100);
+        //System.out.println(circle.randomPoint(100, 100));
         //circle.getDistance(circle1);
 
-        Triangle triangle = new Triangle(200, 100, 70, 10, 500, 40);
+        Triangle triangle = new Triangle(200, 100, 50, 500);
         //triangle.getCircumference();
-        //triangle.getAreal();
+        triangle.getAreal();
         //triangle.getCenter();
         //triangle.getDistance(circle1);
+        System.out.println(triangle.randomPoint(199, 101));
 
         Square square = new Square(40, 40, 50, 50);
         //square.getCircumference();

@@ -4,6 +4,7 @@ public abstract class SuperShape {
    int centerY;
    double distance;
 
+
    abstract void getCircumference();
 
    abstract void getCenter();
@@ -15,8 +16,8 @@ public abstract class SuperShape {
    public void getDistance(SuperShape s){
       double xDistance;
       double yDistance;
-      xDistance = Math.sqrt(Math.pow((s.centerX - centerX),2));
-      yDistance = Math.sqrt(Math.pow((centerY - s.centerY),2));
+      xDistance = Math.abs(s.centerX - centerX);
+      yDistance = Math.abs(centerY - s.centerY);
       distance = Math.sqrt(Math.pow((xDistance),2) + Math.pow((yDistance),2));
       System.out.println(distance);
    }
